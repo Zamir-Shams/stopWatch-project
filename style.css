@@ -1,0 +1,153 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+}
+
+body{
+   background-color: beige;
+   font-family: raleway;
+}
+
+main{
+   width: 80vw;
+   height: 70vh;
+   background-color: white;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   border-radius: 2rem;
+}
+
+article .seconds{
+   text-align: center;
+   margin: 1rem 0;
+   font-size: 2rem;
+   font-family: verdana;
+}
+
+.boxes{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 2rem;
+}
+
+.boxes div{
+   border: 1px solid royalblue;
+   padding: 1rem 1.5rem;
+   border-radius: .7rem;
+   width: 9rem;
+   text-align: center;
+   transition: all 300ms ease;
+}
+
+.boxes .reset input[type="reset"]{
+   background: none;
+   border: none;
+   outline: none;
+   font-family: raleway;
+}
+
+.boxes div:hover{
+   background-color: antiquewhite;
+   border: none;
+   cursor: pointer;
+}
+
+
+
+@media screen and (max-width:631px){
+   main{
+      height: 90vh;
+   }
+
+   .boxes{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+   } 
+   
+}
+
+@media screen and (max-width:337px){
+   h1,h2{
+      font-size: 1rem;
+      text-align: center;
+   }
+}
+ 
+/* $orange: #ffa600;
+$grey:#f3f3f3;
+$white: #fff;
+$base-color:$orange ;
+
+@mixin transition {
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+@mixin corners ($radius) {
+-moz-border-radius: $radius;
+-webkit-border-radius: $radius;
+border-radius: $radius; 
+-khtml-border-radius: $radius; 
+}
+
+body {
+background:$base-color;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+height:100%;
+}
+
+.wrapper {
+width: 800px;
+margin: 30px auto;
+color:$white;
+text-align:center;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 2.6em;
+  text-transform: uppercase;
+}
+
+#seconds, #tens{
+  font-size:2em;
+}
+
+button{
+@include corners (5px);
+background:$base-color;
+color:$white;
+border: solid 1px $white;
+text-decoration:none;
+cursor:pointer;
+font-size:1.2em;
+padding:18px 10px;
+width:180px;
+margin: 10px;
+ outline: none;
+  &:hover{
+	@include transition;
+	background:$white;
+	border: solid 1px $white;
+	color:$base-color;
+	}
+}
+ */
+
+
+
+
+
+
